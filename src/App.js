@@ -1,25 +1,18 @@
-import logo from './logo.svg';
+import React from 'react';
+import SignUpForm from './SignUpForms';
 import './App.css';
+import AddCommas from './addCommas';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Madlibs</h1>
+      <p>Type an adjetive, a verb and a noun to get a message</p>
+      < SignUpForm />
+      < AddCommas/>
     </div>
   );
 }
+
 
 export default App;
